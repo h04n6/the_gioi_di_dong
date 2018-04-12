@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+}
+a{
+    /*Màu sắc*/
+    color: #3b9eff;
+    /*Bỏ gạch chân*/
+    text-decoration: none
+}
+ul{
+    /*Bỏ dấu chấm tròn*/
+    list-style-type: none
+}
+#anh-bai-viet{
+    text-align: center
+}
+#anh-bai-viet a img{
+    box-shadow: 3px 3px 3px #e1e1e1;
+}
+#bang-danh-sach-sinh-vien{
+    border-collapse: collapse;
+    width: 100%
+}
+#bang-danh-sach-sinh-vien thead tr{
+    background-color: #e1e1e1
+}
+.dong-chan{
+    background-color: #e1e1e1
+}
+ul li a:hover{
+    color: #3a79d5;
+}
+#logo{    float: left;     width: 20%;}
+#menu {    float: left;     width: 80%;}
+#main-content{    clear: both;}
+#menu ul {    padding: 0;    text-align: right;    margin: 0;}
+#menu ul li {    display: inline-block;}
+#menu a {    padding: 28px 15px;    display: block;    font-weight: bold;    color: #fff;}
+#menu a:hover{    background: #3b95f5;}
+div#header {    background: #3b9eff;    height: 75px;}
+.text-center{
+    text-align: center;
+}
+.bg-primary{
+    background-color: #3b95f5;
+    color: white;
+    padding: 10px 0;
+}
+#form-nhap-thong-tin{
+    width: 60%;
+    margin: 0 auto;
+    border: 2px solid #3a79d5;
+    padding: 10px;
+    box-shadow: 3px 3px 3px #ccc;
+}
+.form-group label:first-child{
+    width: 25%;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.form-group{
+    border-bottom: 1px dotted #cccccc;
+    padding: 7px 0;
+}
+.form-control{
+    width: 70%;
+    padding: 3px 0;
+}
+.top-label{
+    vertical-align: top;
+}
+.no-border{
+    border-bottom: none;
+}
+.action{
+    text-align: right;
+}
+
+.btn-primary{
+    background: #3a79d5;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+
+.btn-primary:hover{
+    cursor: pointer;
+    background-color: #3b9eff;
+}
+p.error{
+    padding: 0;
+    padding-left: 40px;
+    margin: 0;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

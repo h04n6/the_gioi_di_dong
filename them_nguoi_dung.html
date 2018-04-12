@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký khách hàng mới</title>
+    <link href="css/style.css" type = "text/css" rel="stylesheet">
+</head>
+<body>
+
+<div id="main-content">
+    <h2 class="text-center bg-primary">KHÁCH HÀNG VUI LÒNG NHẬP ĐẦY ĐỦ THÔNG TIN</h2>
+    <form id="form-nhap-thong-tin" action="xl_dangky.php" method="post">
+        <div class="form-group">
+            <label for="ten-dang-nhap">Tên đăng nhập</label>
+            <input name="ten_dang_nhap" id="ten-dang-nhap" class="form-control">
+            <p class="error" id="error-ten-dang-nhap"></p>
+        </div>
+        <div class="form-group">
+            <label for="mat-khau">Mật khẩu</label>
+            <input name="mat_khau" id="mat-khau" class="form-control">
+            <p class="error" id="error-mat-khau"></p>
+        </div>
+        <div class="form-group">
+            <label for="xac-nhan-mat-khau">Xác nhận mật khẩu</label>
+            <input name="xac_nhan_mat_khau" id="xac-nhan-mat-khau" class="form-control">
+            <p class="error" id="error-xac-nhan-mat-khau"></p>
+        </div>
+        <div class="form-group">
+            <label for="email-">Email</label>
+            <input name="email_" id="email-" class="form-control">
+            <p class="error" id="error-email"></p>
+        </div>
+        <div class="form-group">
+            <label for="so-dien-thoai">Số điện thoại</label>
+            <input name="so_dien_thoai" id="so-dien-thoai" class="form-control">
+        </div>
+        <div class="action">
+            <button id="btn-dang-ky" type="submit" class="btn-primary">Đăng ký</button>
+        </div>
+    </form>
+</div>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</body>
+
+<!--<script type="text/javascript">
+    document.getElementById('btn-dang-ky').addEventListener('click', function (e) {
+        document.getElementById('error-ten-dang-nhap').innerText = '';
+        var $tendangnhap = document.getElementById('ten-dang-nhap').value;
+        var $matkhau = document.getElementById('mat-khau').value;
+        var $xacnhanmatkhau = document.getElementById('xac-nhan-mat-khau').value;
+        var $email = document.getElementById('email-').value;
+        if($tendangnhap == ''){
+            document.getElementById('error-ten-dang-nhap').innerText = 'Vui lòng điền tên đăng nhập';
+            document.getElementById('ten-dang-nhap').focus();
+        }
+        if($matkhau == ''){
+            document.getElementById('error-mat-khau').innerText = 'Vui lòng điền mật khẩu';
+        }
+        if($xacnhanmatkhau == ''){
+            document.getElementById('error-xac-nhan-mat-khau').innerText = 'Vui lòng xác nhận mật khẩu';
+        }
+        if($email == ''){
+            document.getElementById('error-email').innerText = 'Vui lòng điền email';
+        }
+        e.preventDefault();
+    });
+</script>-->
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
