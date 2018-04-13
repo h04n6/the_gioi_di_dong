@@ -8,7 +8,8 @@
 	<h2 class="text-center bg-primary">VUI LÒNG NHẬP ĐỦ THÔNG TIN</h2>
 	<div id="left">
         <p>Thông tin chung</p>
-		<form class="form_nhap_thong_tin" method="post" enctype="multipart/form-data" action="xl_them_hang_hoa.php">
+		<form class="form_nhap_thong_tin" method="post" enctype="multipart/form-data" action="xl_them_hang_hoa.php"
+        onsubmit="return check_blank_input()">
 			<div class="form-group">
 				<label for="loai-hh">Loại hàng</label>
 				<select id="loai-hh" name = "loai_hh" class="form-control">
@@ -45,21 +46,13 @@
 				<label for="gia-hh">Giá</label>
 				<input type="text" name="gia_hh" id="gia-hh" class="form-control">
 			</div>
-            <div class="action">
-                <button id="button-tiep-theo" type="submit">Tiếp theo</button>
-                <script type="text/javascript">
-                    document.getElementById('button-tiep-theo').addEventListener('click', function() {
-                        document.getElementById('div_below').style.visibility = 'visible';
-                    })
-                </script>
-            </div>
         </div>
 
         <div id="div_below">
             <p>Thông tin chi tiết</p>
             <div class="form-group">
                 <label for="anh-">Ảnh</label>
-                <input type="file" name="anh_" id="anh-" multiple class="form-control">
+                <input type="file" name="anh_[]" id="anh-" multiple class="form-control">
                 <!--<p>Description</p>
                 <textarea rows="10" cols="35" name="Description"></textarea>-->
             </div>
@@ -102,6 +95,14 @@
             <div class="form-control">
                 <label for="pin-">Camera sau</label>
                 <input type="text" name="pin_" id="pin-" class="form-control">
+            </div>
+            <div class="action">
+                <button id="button-tiep-theo" type="submit">Tiếp theo</button>
+                <script type="text/javascript">
+                    function check_blank_input(){
+                        
+                    }
+                </script>
             </div>
         </form>
     </div>
