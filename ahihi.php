@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <title>WELCOME TO TGDD</title>
     <link href="css/style2.css" type="text/css" rel="stylesheet">
-
+    <?php 
+        include("database.php");
+    ?>
 
 
 </head>
@@ -22,11 +24,16 @@
         <ul>
             <li><a href="#">ĐIỆN THOẠI</a>
                 <ul class="menu_down">
-                    <li><a href="#">IPhone</a></li>
-                    <li><a href="#">OPPO</a></li>
-                    <li><a href="#">Samsung</a></li>
-                    <li><a href="#">Xiaomi</a></li>
-                    <li><a href="#">Huawei</a></li>
+                    <?php 
+                        $query_select_trademark = "Select * From thuong_hieu Order By ten_thuong_hieu";
+                        $result = mysqli_query($dbConn, $query_select_trademark);
+                         while ($row = mysqli_fetch_assoc($result)){                           
+                    ?>
+                <li><a href="listiphone.php?id=<?php echo $row["ma_thuong_hieu"]?>">
+                    <?php echo $row['ten_thuong_hieu'] ?></a></li>
+                    <?php
+                        }     
+                    ?>
                 </ul>
             </li>
 
@@ -73,10 +80,6 @@
                     <li><a href="">TABLET</a></li>
                 </ul>
             </li>
-
-
-
-
         </ul>
     </div>
 </div>
@@ -99,16 +102,20 @@
 
 <div class="adver">
     <?php
-    include ("database.php");
     //lấy ra 2 ảnh mới nhất để làm quảng cáo
-    $query_select_image_adver = "Select * From quang_cao Where state = 2 Limit 2";
+    $query_select_image_adver = "Select * From quang_cao Where state = 2 Order By ma_quang_cao DESC Limit 2";
     $result = mysqli_query($dbConn, $query_select_image_adver);
-     while ($row = mysqli_fetch_assoc($result)){
-        echo '<img src="img/' . $row['anh'] . '" width="180" height="200">';
-        }     
+     while ($row = mysqli_fetch_assoc($result)){ 
     ?>
-    <!--<img src="img/qc.png" >
-    <img src="img/qc2.png">-->
+        <a href="quang_cao.php?id=<?php echo $row["ma_quang_cao"]?>">
+            <img src="img/<?php echo $row["anh"] ?>">
+        </a>
+    <?php
+    }    
+    ?>
+
+    <img src="img/qc.png">
+    <img src="img/qc2.png">
 </div>
 
 <div id="main">
@@ -117,17 +124,24 @@
 
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-            <?php
-            include ("database.php");
-            //lấy ra 5 ảnh panel lớn để chạy slide quảng cáo
-            $query_select_image_adver = "Select * From quang_cao Where state = 1 Limit 5";
-            $result = mysqli_query($dbConn, $query_select_image_adver);
-             while ($row = mysqli_fetch_assoc($result)){
-                echo '<div class="mySlides fade">
-                        <img src="img/' . $row['anh'] . '" width="180" height="200">
-                        </div>';
-                }     
-            ?>
+                <?php
+                //lấy ra 5 ảnh panel lớn để chạy slide quảng cáo
+                $query_select_image_adver = "Select * From quang_cao Where state = 1 Limit 5";
+                $result = mysqli_query($dbConn, $query_select_image_adver);
+                while ($row = mysqli_fetch_assoc($result)){
+                    
+                ?>
+            <!--sự kiện khi bấm vào 1 slide quảng cáo -->
+            <div class="mySlides fade">
+                <a href="quang_cao.php?id=<?php echo $row["ma_quang_cao"]?>">
+                    <img src="img/<?php echo $row["anh"] ?>" width="180" height="200">
+                </a>
+            </div>
+                <?php
+                    }     
+                ?>
+
+                <img src="img/fade.png" width="180" height="200">
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -142,7 +156,7 @@
 
         function showSlides() {
             var i;
-            var slides = document.getElementsByClassName("mySlides");
+            var slides = document.getElementsByClassName("mySlides fade");
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";
             }
@@ -155,7 +169,7 @@
   </div>
 
 
-<div id="">
+<div>
     <a href="#">            <img src="img/pic.png" >        </a>
 </div>
 
@@ -166,17 +180,21 @@
         <ul>
         <?php
         include ("database.php");
-        $query_select = "Select ten, gia, anh From hang_hoa Inner Join chi_tiet_hang_hoa On hang_hoa.ma_hh = chi_tiet_hang_hoa.ma_hh";
+        $query_select = "Select hang_hoa.ma_hh as ma, ten, gia, anh From hang_hoa Inner Join chi_tiet_hang_hoa On hang_hoa.ma_hh = chi_tiet_hang_hoa.ma_hh Limit 12";
         $result = mysqli_query($dbConn, $query_select);
         while ($row = mysqli_fetch_assoc($result)){
             $ar = array();
-            $ar = explode('@', $row['anh']);
-            echo '<li><a href="http://localhost:1124/Designing%20and%20programing%20web/kakaka.html?_ijt=d729e5j72o7qd8c6v85dvg2anb">
-                    <img src="img/' . $ar[0]. '" width="180" height="200">
-                    <p>' . $row["ten"] . '</p>
-                    <p style="color: red"><b>' . $row["gia"]. '</b></p>
-                </a></li>';
-        }     
+            $ar = explode('@', $row["anh"]);
+            ?>
+        <li><a href="kakaka.php?id=<?php echo $row["ma"]?>">
+            <img src="img/<?php echo $ar[0] ?>" width="180" height="200">
+            <p><?php echo $row["ten"] ?></p>
+            <p style="color: red"><b><?php echo $row["gia"] ?></b></p>
+        </a></li>;
+
+        <!-- kết thúc vòng while -->
+        <?php
+            }     
         ?>               
         </ul>
     </div>

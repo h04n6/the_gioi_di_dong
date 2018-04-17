@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Thêm hàng hóa</title>
+    <link rel="stylesheet" type="text/css" href="css/them_hang_hoa.css">
 </head>
 <body>
 	<h2 class="text-center bg-primary">VUI LÒNG NHẬP ĐỦ THÔNG TIN</h2>
@@ -26,7 +27,7 @@
                             var value_loai_hh = s.options[s.selectedIndex].value;
                             alert(value_loai_hh);
                         })
-                        s.value = 1; <!--default: smartphone-->
+                        s.value = 1;
                     </script>
 				</select>
 			</div>
@@ -48,9 +49,7 @@
 				<label for="gia-hh">Giá</label>
 				<input type="text" name="gia_hh" id="gia-hh" class="form-control">
 			</div>
-        </div>
 
-        <div id="div_below">
             <p>Thông tin chi tiết</p>
             <div class="form-group">
                 <label for="anh-">Ảnh</label>

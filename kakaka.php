@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>OPPO F5</title>
+    <title>THÔNG TIN CHI TIẾT</title>
     <link rel="stylesheet" href="css/style2.css" type="text/css">
+    <?php
+        include("database.php");
+    ?>
 </head>
 <body>
 <div id="header">
@@ -18,13 +21,16 @@
         <ul>
             <li><a href="#">ĐIỆN THOẠI</a>
                 <ul class="menu_down">
-
-                    <li><a href="#">IPhone</a></li>
-                    <li><a href="#">OPPO</a></li>
-                    <li><a href="#">Samsung</a></li>
-                    <li><a href="#">Xiaomi</a></li>
-                    <li><a href="#">Huawei</a></li>
-
+                    <?php 
+                        $query_select_trademark = "Select * From thuong_hieu Order By ten_thuong_hieu";
+                        $result = mysqli_query($dbConn, $query_select_trademark);
+                        while ($row = mysqli_fetch_assoc($result)){                           
+                    ?>
+                <li><a href="listiphone.php?id=<?php echo $row["ma_thuong_hieu"]?>">
+                    <?php echo $row['ten_thuong_hieu'] ?></a></li>
+                    <?php
+                        }     
+                    ?>
                 </ul>
             </li>
 
@@ -78,29 +84,38 @@
     <p style="font-weight: bold; font-size: 20px">THÔNG SỐ KĨ THUẬT</p>
 
     <?php
-    include ("database.php");
-    //nhận dữ liệu từ form main
-    $ma_hh = $_POST('ma_hh');
-    $query_select = "Select * From chi_tiet_hang_hoa Inner Join hang_hoa On hang_hoa.ma_hh = chi_tiet_hang_hoa.ma_hh Where ma_hh='$ma_hh'"
-    mysqli_query($dbConn, $query_select);
+    //nhận dữ liệu từ ahihi.php
+    $ma_hh = '1';
+    if(isset($_GET['id'])){
+        $ma_hh = $_GET['id'];
+    }
+    
+    $query_select = "Select * From hang_hoa Inner Join chi_tiet_hang_hoa On hang_hoa.ma_hh = chi_tiet_hang_hoa.ma_hh Where hang_hoa.ma_hh = '$ma_hh' Limit 1";
+    $result = mysqli_query($dbConn, $query_select);
+    $row = mysqli_fetch_assoc($result);
+    $ar = array();
+    $ar = explode('@', $row["anh"]);
+    
     ?>
-
     <div id="a">
-        <p style=" font-size: 20px"> <?php echo $row['ten'] ?></p>
-        <img src="img/oppof5.png" > </div>
+        <p style=" font-size: 20px"><?php echo $row['ten'] ?></p>
+        <img src=<?php echo "img/" . $ar[0] ?> > </div>
     <div id="b">
-       <p style="color: red; font-size: 25px">8.990.000đ</p>
+       <p style="color: red; font-size: 25px"><?php echo $row['gia'] ?></p>
+
+       <!-- lấy dữ liệu từ bảng quảng cáo ở đây-->
         <div id="d">  <p style="font-weight: bold">KHUYẾN MÃI</p>
             <p>Phiếu mua hàng trị giá 100.000đ khi mua online </p>
             <p>Phiếu mua hàng Oppo trị giá 500.000đ </p>
-            <a href="http://localhost:1124/Designing%20and%20programing%20web/ahihe.html?_ijt=ptqr1t277ksaam7jh2p0qd3lt8"><img src="img/Capture.PNG" alt=""></a>
+            <a href="muahang.php?id=">
+            <img src="img/Capture.PNG" alt=""></a>
             <a href="http://localhost:1124/Designing%20and%20programing%20web/hehehe.html?_ijt=d729e5j72o7qd8c6v85dvg2anb"><img src="img/Capture2.PNG" alt=""></a>
             <p>Gọi đặt mua ngay hôm nay: <b style="color: #3b95f5">0975.106.081</b> (Miễn phí: 10-11pm)</p>
         </div>
 
     </div>
     <div id="c">
-        <p>Màn hình:        <?php echo $row['man_hinh'] ?>
+        <p>Màn hình:        <?php echo $row['ten'] ?>
             <br>
             <hr>
             Hệ điều hành:   <?php echo $row['hdh'] ?>
@@ -130,9 +145,11 @@
             Dung lượng pin: <?php echo $row['pin']?>
         <hr>
         </p>
-        ?>
         
     </div>
+    
+
+    
 </section>
 
 </body>
