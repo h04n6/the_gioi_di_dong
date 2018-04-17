@@ -2,6 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4dd75cd6-dceb-4b13-925a-3201519b13f7" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/ahihi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Capture.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/Capture2.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/bithu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/c.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/cho.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/dt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/fade.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/fade2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/fade3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/hello.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/hl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/huawei.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/imagelogotgdd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/iphone-6-32gb-vang-400-400x460.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/iphone-6s-plus-32gb-400x450-400x450.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/iphone-7-32gb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/iphone-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/iphone-8-plus-256gb2-400x460-1-400x460.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/iphonex.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/issac.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logothegioididong.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/mh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/nokia-6-400x460.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/oppo-a37-a37fwhero-400x466.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/oppo-f3-plus-1-1-400x460.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/oppo-f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/oppof5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/pic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/qc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/qc2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/quangcao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/samsung-galaxy-a8-plus-2018-h2-400x460.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/samsung-galaxy-s9-plus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ss s9+.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/st.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tm.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/vivo-v9-1-2-400x460-400x460.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/xiaomi-mi-a1-mau-vang-hong-400x460.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/them_hang_hoa.php" beforeDir="false" afterPath="$PROJECT_DIR$/them_hang_hoa.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xl_them_hang_hoa.php" beforeDir="false" afterPath="$PROJECT_DIR$/xl_them_hang_hoa.php" afterDir="false" />
@@ -18,19 +57,28 @@
       <file leaf-file-name="them_hang_hoa.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/them_hang_hoa.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="102" column="24" selection-start-line="102" selection-start-column="24" selection-end-line="102" selection-end-column="24" />
+            <state relative-caret-position="476">
+              <caret line="112" column="26" lean-forward="true" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xl_them_hang_hoa.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/xl_them_hang_hoa.php">
+      <file leaf-file-name="them_nguoi_dung.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/them_nguoi_dung.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="26" column="66" lean-forward="true" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
+            <state relative-caret-position="-34">
+              <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ahihi.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ahihi.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-19">
+              <caret line="111" column="2" selection-start-line="111" selection-start-column="2" selection-end-line="112" selection-end-column="35" />
               <folding>
-                <element signature="e#10#327#0#PHP" expanded="true" />
+                <element signature="n#style#0;n#p#1;n#a#0;n#li#5;n#ul#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,8 +92,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/xl_them_hang_hoa.php" />
         <option value="$PROJECT_DIR$/them_hang_hoa.php" />
+        <option value="$PROJECT_DIR$/xl_them_hang_hoa.php" />
+        <option value="$PROJECT_DIR$/them_nguoi_dung.html" />
       </list>
     </option>
   </component>
@@ -56,8 +105,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="683" />
-    <option name="height" value="728" />
+    <option name="x" value="52" />
+    <option name="y" value="24" />
+    <option name="width" value="1034" />
+    <option name="height" value="703" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -108,16 +159,16 @@
       <option name="presentableId" value="Default" />
       <updated>1523540537210</updated>
       <workItem from="1523540538598" duration="6571000" />
-      <workItem from="1523583287829" duration="4829000" />
+      <workItem from="1523583287829" duration="7353000" />
+      <workItem from="1523599936302" duration="8700000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11400000" />
+    <option name="totallyTimeSpent" value="22624000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="683" height="728" extended-state="0" />
-    <editor active="true" />
+    <frame x="52" y="24" width="1034" height="703" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.22151224" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -149,25 +200,60 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/them_hang_hoa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1615">
-          <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
+        <state relative-caret-position="1156">
+          <caret line="68" column="44" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xl_them_hang_hoa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="26" column="66" lean-forward="true" selection-start-line="26" selection-start-column="66" selection-end-line="26" selection-end-column="66" />
-          <folding>
-            <element signature="e#10#327#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="935">
+          <caret line="65" column="86" selection-start-line="65" selection-start-column="86" selection-end-line="65" selection-end-column="86" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/them_hang_hoa.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="102" column="24" selection-start-line="102" selection-start-column="24" selection-end-line="102" selection-end-column="24" />
+        <state relative-caret-position="1615">
+          <caret line="95" column="26" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xl_dangky.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="17" lean-forward="true" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xl_them_hang_hoa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="86" column="58" selection-start-line="86" selection-start-column="58" selection-end-line="86" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ahihi.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="111" column="2" selection-start-line="111" selection-start-column="2" selection-end-line="112" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#p#1;n#a#0;n#li#5;n#ul#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/them_nguoi_dung.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/them_hang_hoa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="112" column="26" lean-forward="true" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="26" />
         </state>
       </provider>
     </entry>

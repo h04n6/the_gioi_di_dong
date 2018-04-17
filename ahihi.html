@@ -112,7 +112,7 @@
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
 
-            <img src="img/st.png" >
+            <img src="img/st.png">
 
         </div>
 
@@ -179,6 +179,11 @@
     <p style="color: orangered; font-weight: bold"><marquee>BẠN MUỐN MUA GÌ??? HÃY ĐẾN VỚI CHÚNG TÔI!!</marquee></p>
     <p style="text-align: left; color: black; font-size: 18px;padding: 10px"><b>12 KHUYẾN MÃI HOT NHẤT</b> </p>
     <div class="sanpham">
+        <?php
+        $query_select = "Select ten, gia, anh From hang_hoa Inner Join chi_tiet_hang_hoa On hang_hoa.ma_hh = chi_tiet_hang_hoa.ma_hh"
+        
+            
+        ?>
         <ul>
             <li>
                 <a href="http://localhost:1124/Designing%20and%20programing%20web/kakaka.html?_ijt=d729e5j72o7qd8c6v85dvg2anb">

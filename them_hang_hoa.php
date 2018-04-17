@@ -30,10 +30,12 @@
                     </script>
 				</select>
 			</div>
+
 			<div class="form-group">
 				<label for="ma-hh">Mã hàng</label>
 				<input type="text" name="ma_hh" id="ma-hh" class="form-control">
 			</div>
+
 			<div class="form-group">
 				<label for="ten-hh">Tên hàng</label>
 				<input type="text" name="ten_hh" id="ten-hh" class="form-control">
@@ -73,7 +75,7 @@
                 <input type="text" name="camera_truoc" id="camera-truoc" class="form-control">
             </div>
             <div class="form-control">
-                <label for="cpu-">Camera sau</label>
+                <label for="cpu-">CPU</label>
                 <input type="text" name="cpu_" id="cpu-" class="form-control">
             </div>
             <div class="form-control">
@@ -89,19 +91,27 @@
                 <input type="text" name="the_nho" id="the-nho" class="form-control">
             </div>
             <div class="form-control">
-                <label for="sim-">Camera sau</label>
+                <label for="sim-">Sim</label>
                 <input type="text" name="sim_" id="sim-" class="form-control">
             </div>
             <div class="form-control">
-                <label for="pin-">Camera sau</label>
+                <label for="pin-">Pin</label>
                 <input type="text" name="pin_" id="pin-" class="form-control">
             </div>
+
             <div class="action">
                 <button id="button-tiep-theo" type="submit">Tiếp theo</button>
                 <script type="text/javascript">
-                    function check_blank_input(){
-                        
-                    }
+                    document.getElementById('button-tiep-theo').addEventListener('click', function() {
+                        var mahh = document.getElementById('ma-hh').value;
+                        <?php
+                        include("database.php");
+                        $query_select_ma_hh = "Select ten From hang_hoa Where ma_hh = 'mahh'";
+                        if (mysqli_query($dbConn, @$query_select_ma_hh)) {
+                            die("Trùng mã sản phẩm");
+                        }
+                        ?>
+                    })
                 </script>
             </div>
         </form>
