@@ -109,7 +109,7 @@
             <label ><input type="radio" name="mau" >Đỏ</label>
         </li>
         <label for="so-luong">Số lượng</label>
-        <select name="so-luong" class="form-control-muahang-soluong">
+        <select name="so_luong" class="form-control-muahang-soluong">
             <option value="1" selected>1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -121,7 +121,7 @@
     <hr>
     <p>Tổng tiền: <b style="float: right">
         <?php  
-            $select_option = $_POST['so-luong'];
+            $select_option = $_POST['so_luong'];
             $gia = $row['gia'];
             $tong_tien = $select_option * $gia;
             echo $tong_tien;

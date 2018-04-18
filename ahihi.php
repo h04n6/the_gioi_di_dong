@@ -22,7 +22,7 @@
 
     <div id="menu">
         <ul>
-            <li><a href="#">ĐIỆN THOẠI</a>
+            <li><a href="danh_sach_dien_thoai.php">ĐIỆN THOẠI</a>
                 <ul class="menu_down">
                     <?php 
                         $query_select_trademark = "Select * From thuong_hieu Order By ten_thuong_hieu";
@@ -123,25 +123,42 @@
     <div class="slideshow-container">
 
         <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-                <?php
-                //lấy ra 5 ảnh panel lớn để chạy slide quảng cáo
-                $query_select_image_adver = "Select * From quang_cao Where state = 1 Limit 5";
-                $result = mysqli_query($dbConn, $query_select_image_adver);
-                while ($row = mysqli_fetch_assoc($result)){
-                    
-                ?>
-            <!--sự kiện khi bấm vào 1 slide quảng cáo -->
-            <div class="mySlides fade">
-                <a href="quang_cao.php?id=<?php echo $row["ma_quang_cao"]?>">
-                    <img src="img/<?php echo $row["anh"] ?>" width="180" height="200">
-                </a>
-            </div>
-                <?php
-                    }     
-                ?>
+        <div class="slideshow-container">
 
-                <img src="img/fade.png" width="180" height="200">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+
+            <a href="adver1_oppo.html"><img src="img/st.png"></a>
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <a href="adver_issac.html"><img src="img/issac.png"  ></a>
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <a href="adver_vivo.html"></a><img src="img/mh.png"  ></a>
+
+        </div>
+        <div class="mySlides fade">
+
+            <a href="Adver_ship.html"><img src="img/fade.png"  ></a>
+
+        </div>
+        <div class="mySlides fade">
+
+            <img src="img/fade2.png"  >
+
+        </div>
+        <div class="mySlides fade">
+
+            <a href="Adver_phukien.html"><img src="img/fade3.png"  ></a>
+
+        </div>
+
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>

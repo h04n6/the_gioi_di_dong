@@ -20,7 +20,7 @@
     <div id="menu">
         <ul>
             
-            <li><a href="#">ĐIỆN THOẠI</a>
+            <li><a href="danh_sach_dien_thoai.php">ĐIỆN THOẠI</a>
                 <ul class="menu_down">
                     <?php 
                         $query_select_trademark = "Select * From thuong_hieu Order By ten_thuong_hieu";

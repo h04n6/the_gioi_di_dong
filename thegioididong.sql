@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th4 17, 2018 lúc 04:25 PM
+-- Thời gian đã tạo: Th4 18, 2018 lúc 04:23 AM
 -- Phiên bản máy phục vụ: 10.1.30-MariaDB
 -- Phiên bản PHP: 5.6.33
 
@@ -76,7 +76,7 @@ CREATE TABLE `hang_hoa` (
   `ma_thuong_hieu` int(11) NOT NULL,
   `ten` text NOT NULL,
   `so_luong` int(11) NOT NULL,
-  `gia` int(11) NOT NULL,
+  `gia` varchar(10) NOT NULL,
   `ma_loai` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -85,27 +85,22 @@ CREATE TABLE `hang_hoa` (
 --
 
 INSERT INTO `hang_hoa` (`ma_hh`, `ma_thuong_hieu`, `ten`, `so_luong`, `gia`, `ma_loai`) VALUES
-('1', 1, '1', 1, 1, 1),
-('2', 2, '2', 2, 2, 1),
-('3', 1, '2', 2, 2, 1),
-('7', 1, '6', 2, 3, 2),
-('a', 1, 'a', 0, 0, 1),
-('HW001', 6, 'Äiá»‡n thoáº¡i Huawei Nova 3e', 60, 6990, 1),
-('HW002', 6, 'Äiá»‡n thoáº¡i Huawei Y7 Prime', 40, 4290, 1),
-('IP001', 3, 'Äiá»‡n thoáº¡i iPhone 6 32GB', 100, 6990, 1),
-('IP002', 1, 'Äiá»‡n thoáº¡i iPhone 6s Plus 32GB', 120, 13990, 1),
-('IP003', 3, 'Äiá»‡n thoáº¡i iPhone X 256GB', 50, 34790, 1),
-('IP004', 3, 'Äiá»‡n thoáº¡i iPhone X 64GB', 80, 29990, 1),
-('NO001', 1, 'Äiá»‡n thoáº¡i Nokia 6', 110, 5590, 1),
-('NO002', 1, 'Äiá»‡n thoáº¡i Nokia 5', 40, 4260, 1),
-('OP001', 5, 'Äiá»‡n thoáº¡i OPPO F5 Youth', 150, 6190, 1),
-('OP002', 5, 'Äiá»‡n thoáº¡i OPPO F5 6GB', 30, 8990, 1),
-('SN001', 7, 'Äiá»‡n thoáº¡i Sony Xperia XZ Premium', 120, 15990, 1),
-('SN002', 7, 'Äiá»‡n thoáº¡i Sony Xperia XZ1', 60, 13990, 1),
-('SN003', 7, 'Äiá»‡n thoáº¡i Sony Xperia XZ Premium Pink Gold', 60, 14490, 1),
-('SS001', 2, 'Äiá»‡n thoáº¡i Samsung Galaxy J7 Pro', 250, 6090, 1),
-('SS002', 2, 'Äiá»‡n thoáº¡i Samsung Galaxy S9+ 128GB', 80, 24990, 1),
-('SS003', 2, 'Äiá»‡n thoáº¡i Samsung Galaxy Note 8', 70, 22490, 1);
+('HW001', 6, 'Äiá»‡n thoáº¡i Huawei Nova 3e', 60, '6990000', 1),
+('HW002', 6, 'Äiá»‡n thoáº¡i Huawei Y7 Prime', 40, '4290000', 1),
+('IP001', 3, 'Äiá»‡n thoáº¡i iPhone 6 32GB', 100, '6990000', 1),
+('IP002', 3, 'Äiá»‡n thoáº¡i iPhone 6s Plus 32GB', 120, '13990000', 1),
+('IP003', 3, 'Äiá»‡n thoáº¡i iPhone X 256GB', 50, '34790000', 1),
+('IP004', 3, 'Äiá»‡n thoáº¡i iPhone X 64GB', 80, '29990000', 1),
+('NO001', 1, 'Äiá»‡n thoáº¡i Nokia 6', 110, '5590000', 1),
+('NO002', 1, 'Äiá»‡n thoáº¡i Nokia 5', 40, '4260000', 1),
+('OP001', 5, 'Äiá»‡n thoáº¡i OPPO F5 Youth', 150, '6190000', 1),
+('OP002', 5, 'Äiá»‡n thoáº¡i OPPO F5 6GB', 30, '8990000', 1),
+('SN001', 7, 'Äiá»‡n thoáº¡i Sony Xperia XZ Premium', 120, '15990000', 1),
+('SN002', 7, 'Äiá»‡n thoáº¡i Sony Xperia XZ1', 60, '13990000', 1),
+('SN003', 7, 'Äiá»‡n thoáº¡i Sony Xperia XZ Premium Pink Gold', 60, '14490000', 1),
+('SS001', 2, 'Äiá»‡n thoáº¡i Samsung Galaxy J7 Pro', 250, '6090000', 1),
+('SS002', 2, 'Äiá»‡n thoáº¡i Samsung Galaxy S9+ 128GB', 80, '24990000', 1),
+('SS003', 2, 'Äiá»‡n thoáº¡i Samsung Galaxy Note 8', 70, '22490000', 1);
 
 -- --------------------------------------------------------
 
